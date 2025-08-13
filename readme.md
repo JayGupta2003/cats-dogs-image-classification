@@ -5,7 +5,7 @@ This notebook presents a Convolutional Neural Network (CNN) implementation using
 ## Dataset
 
 The project utilizes the "Dog and Cat Classification Dataset" available on Kaggle. This dataset comprises a substantial collection of images categorized into 'Dogs' and 'Cats' classes.
-
+---
 ## Implementation Details
 
 1.  **Environment Setup:** The initial cells handle the necessary library imports (TensorFlow, Keras, Matplotlib, NumPy, Pandas) and configure the Kaggle API for dataset download.
@@ -26,15 +26,19 @@ The project utilizes the "Dog and Cat Classification Dataset" available on Kaggl
 8.  **Results Visualization:** Plots are generated to visualize the training and validation loss and accuracy over the epochs.
 9.  **Model Saving:** The trained model is saved in the Keras format (`model.keras`).
 10. **Handling Invalid Files:** Code is included to identify and remove corrupted image files in the dataset that can cause errors during loading.
-
+---
 ## Performance
 
-The model achieved a validation accuracy of approximately [Insert Final Validation Accuracy]%. The training and validation curves indicate [mention observations about the curves, e.g., signs of overfitting, convergence].
+The model achieved a validation accuracy of approximately 87.35%. The training and validation curves indicate. The graphs indicate that this is a model with no overfitting as the validation losses and accuracy move together and are close to each other.
+
+![loss graph](graph_loss.png)
+![acc graph](graph_acc.png)
+
+---
 
 ## Potential Enhancements
 
 - Explore alternative CNN architectures (e.g., VGG, ResNet).
 - Implement learning rate scheduling.
-- Utilize techniques like early stopping to prevent overfitting.
 - Investigate transfer learning with pre-trained models on larger datasets.
 - Perform a more detailed analysis of misclassified images.
